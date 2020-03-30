@@ -1,0 +1,230 @@
+<html lang="en"><head>
+	<title> MENE3</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="file:///C:/Users/ahmed/Desktop/Login_v4/Tunisia-Flag-icon.png">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 100px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: left;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+				<form class="login100-form validate-form">
+					  <button id="myBtn"> <p><font color="blue" style="
+    padding-left: 260px;
+                          "><u>Créez Un Compte!</u></font></p> </button>  
+						  <span class="login100-form-title p-b-49">
+						Login
+					</span>
+
+					<div class="wrap-input100 validate-input m-b-23" data-validate="Username is reauired">
+						<span class="label-input100">Nom</span>
+						<input class="input100 has-val" type="text" name="username" placeholder="  votre nom">
+						<span class="focus-input100" data-symbol=""></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Password is required">
+						<span class="label-input100"> Mot De Passe</span>
+						<input class="input100 has-val" type="password" name="pass" placeholder="Votre Mot De Passe">
+						<span class="focus-input100" data-symbol=""></span>
+					</div>
+					
+					<div class="text-right p-t-8 p-b-31">
+						<a href="#">Mot De Passe Oublié </a>
+					</div>
+					
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn">Se Connecter</button>
+						</div>
+					</div>
+
+					
+
+					
+
+<!-- The Modal -->
+<div id="myModal" class="modal" style="display: none;">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">×</span>
+    <p>        </p><div class="bg-agile">
+	<div class="book-appointment" style="
+    margin-left: 250px;
+">
+	<h2>Saisissez vos informations</h2>
+			
+			<div class="left-agileits-w3layouts same">
+			<div class="gaps">
+				<p>Nom</p>
+					<input type="text" name="Nom" placeholder="" required="">
+			</div>	
+				<div class="gaps">	
+				<p>Numéro du téléphone</p>
+					<input type="text" name="Number" placeholder="" required="">
+				</div>
+				<div class="gaps">
+				<p>Adresse</p>
+						<input type="text" name="Adresse" placeholder="" required="">
+
+				</div>	
+				<div class="gaps">
+				<p>Poids (kg)</p>
+						<input type="text" name="Poids" placeholder="" required="">
+				</div>
+			</div>
+			<div class="right-agileinfo same">
+			<div class="gaps">
+				<p>Prénom</p>		
+						<input type="text" name="Prénom" placeholder="" required="">
+
+			</div>
+			<div class="gaps">
+				<p>Date de naissance</p>	
+					<input id="datepicker1" name="Text" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="" class="hasDatepicker">
+
+			</div>
+			<div class="gaps">
+				<p>Sexe</p>	
+					<select class="form-control">
+						<option></option>
+						<option>Male</option>
+						<option>Female</option>
+					</select>
+			</div>
+			<div class="gaps">
+				<p>Taille (cm)</p>		
+					<input type="text" name="Taille" placeholder="" required="">	
+			</div>
+			</div>
+			<div class="clear"></div>
+						  <input type="submit" value="Suivant" link="">
+			
+		</div>
+   </div><p></p>
+  </div>
+
+</div></form>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+					</div>
+				
+			</div>
+		</div>
+	
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+
+</body></html>
